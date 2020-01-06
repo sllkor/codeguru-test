@@ -2,10 +2,7 @@ package chat.client.main;
 
 import java.util.Scanner;
 
-import chat.client.handler.ChatClientInboundHandler;
-import chat.client.handler.ChatClientPacketDecoder;
-import chat.client.handler.ChatClientPacketEncoder;
-import chat.client.handler.InboundExceptionHandler;
+
 import chat.common.enums.CloseCause;
 import chat.common.handler.ChannelState;
 import chat.common.handler.ChatCommonInboundPipelineHandler;
