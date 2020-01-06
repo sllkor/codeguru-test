@@ -14,6 +14,7 @@ public class PacketAllCbMessageToString {
 		map.put(PacketAllCbMessageType.NULL, new StaticStrGetter("알 수 없는 내용"));
 		map.put(PacketAllCbMessageType.EXITED, new StaticStrGetter("방을 나왔습니다."));
 		map.put(PacketAllCbMessageType.EXITED, new StaticStrGetter("코드리뷰 테스트"));
+		map.put(PacketAllCbMessageType.EXITED, new StaticStrGetter("코드리뷰 테스트2"));
 		map.put(PacketAllCbMessageType.MATCHFOUND, new StrGetter() {
 			
 			@Override
@@ -35,6 +36,7 @@ public class PacketAllCbMessageToString {
 	public static String getString(PacketAllCbMessageType type, String[] arr) {
 		if (type == null)
 			return "알 수 없음";
+		if(type == null) return "";
 		return map.get(type).get(arr);
 	}
 
